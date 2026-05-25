@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML转富文本编辑器</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>HTML转富文本编辑器</h1>
+            </div>
+            <p class="subtitle">将HTML代码转换为可复制的富文本格式</p>
+        </header>
+
+        <div class="toolbar">
+            <button id="clearBtn" class="btn btn-secondary">
+                <i class="fas fa-trash"></i>
+                <span>清空</span>
+            </button>
+            <button id="exampleBtn" class="btn btn-secondary">
+                <i class="fas fa-file-code"></i>
+                <span>示例代码</span>
+            </button>
+            <button id="copyBtn" class="btn btn-primary">
+                <i class="fas fa-copy"></i>
+                <span>复制富文本</span>
+            </button>
+        </div>
+
+        <div class="main-content">
+            <div class="panel">
+                <div class="panel-header">
+                    <i class="fas fa-code"></i>
+                    <span>HTML输入</span>
+                </div>
+                <textarea id="htmlInput" class="code-input" placeholder="在此输入HTML代码..."></textarea>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header">
+                    <i class="fas fa-eye"></i>
+                    <span>富文本预览</span>
+                </div>
+                <div id="preview" class="preview-area"></div>
+            </div>
+        </div>
+
+        <div id="toast" class="toast">
+            <i class="fas fa-check-circle"></i>
+            <span>复制成功！</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
