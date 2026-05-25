@@ -17,8 +17,8 @@
 
 ### 直接使用
 
+访问链接：[https://www.inknook.ink/HTML-2-Rich-Text/](https://www.inknook.ink/HTML-2-Rich-Text/)
 直接在浏览器中打开 `index.html` 文件即可使用。
-
 
 ### 本地开发
 
